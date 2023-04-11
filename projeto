@@ -1,0 +1,108 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: 23007950
+"""
+#Aluna:Bruna Barbour Fernandes 
+
+import random
+
+Computador= random.randint(1, 3)
+
+print("_"*30)
+print ("Jokenpô! \n")
+jogador = -1
+ijogador = 0 
+icomputador = 0
+
+
+
+while True:
+
+    print ("_"*30) 
+    print ("\n")      
+    print ("Inicie a jogada!")
+    print ("0- pedra")
+    print ("1- papel")
+    print ("2- tesoura")
+    print ("-> Digite 4 para visualizar o placar: ")
+    jogador = int (input ("Digite aqui sua opção: "))
+
+    if jogador < 3 :
+            
+        if Computador == 0:
+            if jogador == 0:
+                print ("\n")
+                print ("EMPATE!")
+                print ("Escolha do computador: ", Computador)
+
+            if jogador == 1:
+                print ("\n")
+                print ("Você Venceu!")
+                print ("Escolha do computador: ", Computador)
+                ijogador = ijogador + 1
+
+
+            if jogador == 2:
+                print ("\n")
+                print ("Vitória do computador!")
+                print ("Escolha do computador: ", Computador)
+                icomputador = icomputador + 1
+
+            
+        
+        if Computador == 1:
+            if jogador == 0:
+                print ("\n")
+                print ("Vitória do computador!")
+                print ("Escolha do computador: ", Computador)
+                icomputador = icomputador + 1
+
+
+
+            if jogador == 1:
+                print ("\n")
+                print ("EMPATE")
+                print ("Escolha do computador: ", Computador)
+
+
+
+            if jogador == 2:
+                print ("\n")
+                print ("Você venceu!")
+                print ("Escolha do computador: ", Computador)
+                ijogador = ijogador + 1
+
+
+
+        if Computador == 2:
+            if jogador == 0:
+                print ("\n")
+                print ("Você venceu!")
+                print ("Escolha do computador: ", Computador)
+                ijogador = ijogador + 1
+
+
+            if jogador == 1:
+                print ("\n")
+                print ("Vitória do computador!")
+                print ("Escolha do computador: ", Computador)
+                icomputador = icomputador + 1
+
+
+
+            if jogador == 2:
+                print ("\n")
+                print ("EMPATE!")
+                print ("Escolha do computador: ", Computador)
+
+
+    elif jogador == 4:
+        print ("\n")
+        print ("Pontuação do jogador: ", ijogador, "vitórias")
+        print ("Pontuação do computador: ", icomputador, "vitórias")
+
+
+    elif jogador >= 5:
+        print ("Opção inválida!")
+    
