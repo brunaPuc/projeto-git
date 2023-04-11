@@ -1,0 +1,1 @@
+oie! esse projeto conta com o código em python para o jogo jokenpô!
